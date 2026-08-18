@@ -1,5 +1,7 @@
 // ignore_for_file: unused_local_variable
 
+// Example 1
+
 // void main() {
 //   String email = "abc@gmail.com";
 //   String password = "123456";
@@ -14,6 +16,8 @@
 //   print(!condition);
 // }
 
+// Example 2
+
 // void main() {
 //   int abc = 34;
 //   int a = 21;
@@ -26,6 +30,8 @@
 
 //   print(!(!o || e));
 // }
+
+// Example 3
 
 void main() {
   int num1 = 10;
