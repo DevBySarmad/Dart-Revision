@@ -1,8 +1,6 @@
-// ignore_for_file: unused_local_variable
+// ignore_for_file: unused_element, dead_code, unused_local_variable
 
 void main() {
-  //                                        BASIC EXAMPLES.....
-
   // Example 1
 
   // print("Hello World");
@@ -50,9 +48,34 @@ void main() {
   // print(num1 == "19"); // False
   // print(num1.toString() == "19"); //True
 
-  // Example 9              Ternary & Short-circuiting Syntax
+  // Example 9              Helper Function
 
-  // int score = 75;
-  // String result = score >= 50 ? "Passed" : "Failed";
-  // print("Result: $result");
+  // void createUser({required String username, int age = 18, String? bio}) {
+  //   print("User: $username, Age: $age, Bio: ${bio ?? 'N/A'}");
+  // }
+
+  // Example 10             Null-Aware Operators (??, ??=, ?.)
+
+  // String? nullableName;
+  // print(nullableName?.length);
+  // String nameToUse = nullableName ?? "Default User";
+  // print(nameToUse);
+  // nullableName ??= "Assigned because it was null";
+  // print(nullableName);
+
+  // Example 11             Type Checking ('is', 'is!') and Smart Casting
+
+  // Object data = "Hello Dart";
+  // if (data is String) {
+  //   print("String.length: ${data.length}");
+  // }
+
+  // Example 12             Records and Destructuring
+
+  // (String, int, {bool isActive}) userRecord = ("John", 25, isActive: true);
+  // print(userRecord.$1);
+  // print(userRecord.$2);
+  // print(userRecord.isActive);
+  // var (name, userAge, isActive: active) = userRecord;
+  // print("$name is $userAge years old. Active: $active");
 }
